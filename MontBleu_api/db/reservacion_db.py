@@ -1,3 +1,5 @@
+## MINTIC project MONTBLEU api
+
 from datetime import datetime
 from typing import Dict
 from pydantic import BaseModel
@@ -32,7 +34,7 @@ def update_user(client_in_db : ClientInDB):         ## Function to update client
     database_users[client_in_db.Id_Client] = client_in_db
     return client_in_db         
 
-database_register=[]
+database_register=[]                ## database to show
 generator={"id":0}                  ## auto increment
 
 def save_client(client_register:ClientInDB):        ## Function to update client information
